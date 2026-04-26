@@ -1,1 +1,3 @@
-yuri idk
+this is yuritube
+an "alternative" to yt that is much superior imho
+clearly...

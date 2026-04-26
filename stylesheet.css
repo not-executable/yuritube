@@ -1,9 +1,18 @@
 .waht {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "dejavu-sans-bold", sans-serif;
+    font-weight: 800;
     font-size: large;
+    font-style: normal;
     color: white;
 }
-
+.mmm {
+    font-family: "dejavu-sans-bold", sans-serif;
+    font-weight: 800;
+    font-size: large;
+    font-style: normal;
+    color: white;
+    padding-left: 10px;
+}
 .yuri {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
@@ -12,4 +21,8 @@
 
 body {
     background-color: purple;
+}
+
+audio {
+    padding-left: 10px;
 }
