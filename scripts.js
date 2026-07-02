@@ -11,15 +11,15 @@ function playmusic(index) {
 }
 
 audio.addEventListener("ended", () => {
-    songlol = (songlol + 1) % musicig.length;
-    playmusic(songlol)
+    trackatm = (trackatm + 1) % musicig.length;
+    playmusic(trackatm)
 });
 
 
 theplaylist.addEventListener("click", (e) => {
     e.preventDefault();
     if (e.target.tagName === "A") {
-        songlol = Array.from(musicig).indexOf(e.target);
-        playmusic(songlol)
+        trackatm = Array.from(musicig).indexOf(e.target);
+        playmusic(trackatm)
     }
 });
