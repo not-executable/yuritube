@@ -11,19 +11,19 @@ function dragthis(element) {
     function dragdown(e) {
         e = e || window.event;
         e.preventDefault();
-        p3 = e.pX;
-        p4 = e.pY;
+        p3 = e.clientX;
+        p4 = e.clientY;
         document.onmouseup = closedrag
-        document.onmousedown = elemdrag
+        document.onmousemove = elemdrag
     }
 
     function elemdrag(e) {
         e = e || window.event;
         e.preventDefault();
-        p1 = p3 - e.pX;
-        p2 = p4 - e.pY;
-        p3 = e.pX;
-        p4 = e.pY;
+        p1 = p3 - e.clientX;
+        p2 = p4 - e.clientY;
+        p3 = e.clientX;
+        p4 = e.clientY;
 
         element.style.top = (element.offsetTop - p2) + "px";
         element.style.left = (element.offsetLeft - p1) + "px";
